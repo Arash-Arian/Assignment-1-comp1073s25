@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #f2d9ba;
+    color: #333;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        margin: 30px;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div.storyTable{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 400px;
+            width: 200px;
+            button.btn{
+                background-color: #333;
+                color: #fff;
+                border: none;
+                margin: 10px;
+                padding: 20px;
+                border-radius: 50px;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(150%);
+                }
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                text-align: center;
+                li{
+                    margin: 10px 0;
+                    padding: 10px;
+
+                }
+            }
+        }
+        div.col1{
+            border: purple 2px solid;
+            h2{
+                color: purple;
+            }
+            button.btn{
+                background-color: purple;
+                &:hover{
+                    background-color: darkviolet;
+                }
+            }
+        }
+        div.col2{
+            border: darkcyan 2px solid;
+            h2{
+                color: darkcyan;
+            }
+            button.btn{
+                background-color: darkcyan;
+                &:hover{
+                    background-color: teal;
+                }
+            }
+        }
+        div.col3{
+            border: green 2px solid;
+            h2{
+                color: green;
+            }
+            button.btn{
+                background-color: green;
+                &:hover{
+                    background-color: darkgreen;
+                }
+            }
+        }
+        div.col4{
+            border: orange 2px solid;
+            h2{
+                color: orange;
+            }
+            button.btn{
+                background-color: orange;
+                &:hover{
+                    background-color: darkorange;
+                }
+            }
+        }
+        div.col5{
+            border: red 2px solid;
+            h2{
+                color: red;
+            }
+            button.btn{
+                background-color: red;
+                &:hover{
+                    background-color: darkred;
+                }
+            }
+        }
+    }
+}

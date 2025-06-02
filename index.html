@@ -14,9 +14,11 @@
     <h1>See ‘N’ Say Storymaker</h1>
 </header>
 <main>
+<!--storyTable container for our story columns-->
     <div class="storyTable">
         <div class="col1">
             <h2>1</h2>
+<!--empty ul tags to be filled with li by js            -->
             <ul>
             </ul>
             <button class="btn" id="btn1"></button>
@@ -46,9 +48,24 @@
             <button class="btn" id="btn5"></button>
         </div>
     </div>
+<!-- storyOutput to output the created story   -->
     <div class="storyOutput">
         <h2>The Story Is...</h2>
-        <p id="storyOutputText">Click the buttons to create your story!</p>
+        <p id="storyOutputText">
+<!--            a placeholder-->
+            <span id="storyPlaceHolder">Click the buttons to create your story!</span>
+<!--            empty spans with id positions to be filled by js-->
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <span id="span5"></span>
+        </p>
+    </div>
+<!-- extra buttons for reset and random story generation -->
+    <div class="extraBtns">
+        <button class="btn" id="resetBtn">Reset</button>
+        <button class="btn" id="randomBtn">Random</button>
     </div>
 </main>
 </body>

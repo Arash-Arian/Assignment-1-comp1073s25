@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     transition: all 0.3s ease;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Corbel', sans-serif;
+    font-weight: bold;
 }
 body{
     background-color: #f2d9ba;
@@ -20,6 +21,19 @@ header{
 }
 
 main{
+    font-size: 25px;
+    button.btn{
+        background-color: #333;
+        color: #fff;
+        border: none;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(150%);
+        }
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,19 +52,8 @@ main{
             padding: 20px;
             border-radius: 10px;
             min-height: 400px;
-            width: 200px;
-            button.btn{
-                background-color: #333;
-                color: #fff;
-                border: none;
-                margin: 10px;
-                padding: 20px;
-                border-radius: 50px;
-                cursor: pointer;
-                &:hover{
-                    transform: scale(150%);
-                }
-            }
+            width: 250px;
+
             ul{
                 list-style: none;
                 padding: 0;
@@ -143,6 +146,59 @@ main{
             font-size: 18px;
             line-height: 1.6;
             color: #555;
+            span{
+                font-weight: bold;
+                font-size: 25px;
+            }
+            #span1{
+                color: purple;
+            }
+            #span2{
+                color: darkcyan;
+            }
+            #span3{
+                color: green;
+            }
+            #span4{
+                color: orange;
+            }
+            #span5{
+                color: red;
+            }
+        }
+    }
+    div.extraBtns{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    button#resetBtn{
+        background-color: #f2d9ba;
+        color: #333;
+        border: 2px solid #333;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100px;
+        &:hover{
+            background-color: #e0c4a1;
+            transform: scale(110%);
+        }
+    }
+    button#randomBtn{
+        margin: 5px;
+        background:linear-gradient(90deg,purple,darkcyan,green,orange,red); ;
+        color: #e0c4a1;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 100px;
+
+        &:hover{
+            background-color: #e0c4a1;
+            transform: scale(110%);
         }
     }
 }
